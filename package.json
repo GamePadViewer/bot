@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "build": "babel src -d lib",
-    "dev": "nodemod --exec babel-node src/bot.js",
+    "dev": "nodemon --exec babel-node src/bot.js",
     "types": "npx typesync"
   },
   "dependencies": {
