@@ -1,6 +1,6 @@
 import { helpEmbed } from '../utils/helpEmbed'
 import helpData from '../data/helpInfo.json'
-import priceData from '../data/priceInfo.json'
+import creatorData from '../data/creatorInfo.json'
 import { removeUserMentions } from '../utils/removeUserMentions'
 import { shuffleArray } from '../utils/shuffleArray'
 import { defaultEmbed } from '../utils/defaultEmbed'
@@ -55,10 +55,16 @@ export default {
                     .map(
                         (c) =>
                             `<@${c.user.id}> (${
-                                priceData[c.user.id]
-                                    ? priceData[c.user.id]
+                                creatorData[c.user.id]?.price
+                                    ? creatorData[c.user.id].price
                                     : '_Ask Creator_'
-                            })`
+                            })${
+                                creatorData[c.user.id]?.portfolio
+                                    ? ` - [Samples](${
+                                          creatorData[c.user.id].portfolio
+                                      })`
+                                    : ''
+                            }`
                     )
                     .join('\n'),
             })
