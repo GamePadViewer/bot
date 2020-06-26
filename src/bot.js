@@ -1,6 +1,7 @@
 import './config'
 import fs from 'fs'
 import Discord from 'discord.js'
+import { argParser } from './utils/argParser'
 
 const bot = new Discord.Client({
     presence: {
@@ -39,8 +40,20 @@ bot.on('message', (msg) => {
     console.log(msg.content)
 
     const [, command, argStr] = msg.content.match(commandSyntax)
+    const args = argParser(argStr)
 
-    msg.channel.send(`Command: ${command}\nArgs: ${argStr}`)
+    // Show message when no command found
+    if (!bot.commands.has(command)) {
+        msg.channel.send(`Command '${command}' not found 😬`)
+        return
+    }
+
+    try {
+        bot.commands.get(command).execute(msg, args)
+    } catch (e) {
+        console.log(e)
+        msg.channel.send(`There was a problem trying to run '${command}'`)
+    }
 })
 
 bot.login(process.env.BOT_TOKEN)
