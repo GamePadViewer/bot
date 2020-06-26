@@ -8,14 +8,16 @@
   "license": "GPL v3",
   "private": true,
   "scripts": {
-    "build": "babel src -d lib",
+    "build": "babel src -d lib --copy-files",
     "dev": "nodemon --exec babel-node src/bot.js",
     "types": "npx typesync",
     "start": "node lib/bot.js"
   },
   "dependencies": {
+    "core-js": "^3.6.5",
     "discord.js": "^12.2.0",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "regenerator-runtime": "^0.13.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.3",
