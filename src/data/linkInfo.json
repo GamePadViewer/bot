@@ -1,0 +1,38 @@
+{
+    "html5": {
+        "title": "Open html5gamepad.com",
+        "url": "https://html5gamepad.com"
+    },
+    "obs": {
+        "title": "Join Open Broadcaster (OBS) Discord",
+        "url": "https://discord.gg/obsproject"
+    },
+    "slobs": {
+        "title": "Join Streamlabs OBS (SLOBS) Discord",
+        "url": "https://discord.gg/stream"
+    },
+    "gpv": {
+        "title": "Open GamePad Viewer",
+        "url": "https://gamepadviewer.com"
+    },
+    "chrome": {
+        "title": "Download Google Chrome",
+        "url": "https://www.google.com/chrome/"
+    },
+    "obs-dl": {
+        "title": "Download Open Broadcaster (OBS)",
+        "url": "https://obsproject.com/download"
+    },
+    "slobs-dl": {
+        "title": "Download Streamlabs OBS (SLOBS)",
+        "url": "https://streamlabs.com/streamlabs-obs"
+    },
+    "ss-win": {
+        "title": "View screenshot instructions for Windows",
+        "url": "https://support.microsoft.com/en-us/help/13776/windows-10-use-snipping-tool-to-capture-screenshots"
+    },
+    "mwb": {
+        "title": "Download Malwarebytes",
+        "url": "https://www.malwarebytes.com/"
+    }
+}

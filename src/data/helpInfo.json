@@ -1,0 +1,71 @@
+{
+  "url": {
+    "title": "Generating a URL",
+    "message": "To generate a URL, click the menu icon in the top left and then click on \"Generate URL\"",
+    "image": "https://media.discordapp.net/attachments/82712913701244928/694480865576615966/url1.png"
+  },
+
+  "cs": {
+    "title": "Custom Skins",
+    "message": "There are a few options when it comes to custom skins:",
+    "fields": [
+      {
+        "name": "Use a premade custom skin",
+        "value": "You can use a skin someone else has made by placing the url to their .css file into the link generator, or check out the directory pinned in <#305200544111263744> for URLs with skins already linked"
+        
+      },
+      {
+        "name": "Make your own",
+        "value": "You can also make your own skin if you know HTML/CSS! The link can also be found pinned in <#305200544111263744>"
+      },
+      {
+        "name": "Ask someone to make you one",
+        "value": "If you're not up to the task of making your own, you can always ask someone to make a custom skin. Since you're comissioning work from someone, don't be surprised if you're quoted a fee.\n\n Below is a list of reputable skin makers:\n"
+      }
+    ]
+  },
+  "console": {
+    "title": "GPV for Consoles",
+    "message": "For console overlay to work, you need a PC/Laptop and an internet connection on both the console and the PC/Laptop. Once you've confirmed this, follow the tutorial video to set up GPV: https://youtu.be/MX-l1Lyx5CQ"
+  },
+  "dualpc": {
+    "title": "Dual PC Streaming Setup",
+    "message": "In order to show your controller inputs on a dual pc stream setup, you'll need OBS installed on both PC's. After getting OBS you will need to download the OBS NDI plugin found here: \nhttps://github.com/Palakis/obs-ndi/releases\nFollow this tutorial to set it up: \nhttps://www.youtube.com/watch?v=SEJPEFu4JUg\n\nOnce set up, simply send the controller inputs send from the gaming computer's OBS to the streaming computer's OBS. You should then be able to resize it and be good to go!\nIf you need further assistance feel free to ask in the <#82712913701244928> channel"
+  },
+  "remap": {
+    "title": "Remapping your Gamepad",
+    "message": "To remap your controller, click the menu icon at the top left and go to \"remap buttons\"",
+    "image": "https://media.discordapp.net/attachments/554461581266649089/686928830501486614/Remap.png"
+  },
+  "ps4-bt": {
+    "title": "Issue with PS4 Controllers connected via Blutooth",
+    "message": "For some unknown reason OBS/SLOBS browser source will not recognise a DualShock 4 (PS4) controller when connected over bluetooth. Somehow, though, Google Chrome is able to read the inputs just fine. The following steps are a workaround to get GPV working using Chrome and window capture:",
+    "fields": [
+      {
+        "name": "1. Open GPV in a new window",
+        "value": "Due to how the Gamepad API works, Chrome will only read inputs for a window that is considered 'visible' so to allow that you need to make sure you open up [GamePad Viewer](https://gamepadviewer.com) in a new window by itself."
+      },
+      {
+        "name": "2. Create a new 'Window Capture' source",
+        "value": "Make sure you select the Chrome window with GamePad Viewer loaded up "
+      },
+      {
+        "name": "3. Crop the 'Window Capture' source",
+        "value": "You can do this by holding ALT when dragging on the corner handles of the source, or by Right Clicking the source > `Transform` > Click `Edit Transform` and then changing the crop values there"
+      },
+      {
+        "name": "4. Apply a Chroma Key to the new 'Window Capture' source",
+        "value": "Right Click the new 'Window Capture' source > Select `Filters` > Click `+` > Select `Color Key` > Change Color Key Type to `Custom` > Click `Select Color` next to Key Color > Click `Pick Screen Color` and select the background color of the website in the preview > Click `OK` > Adjust the color key similarity and smoothing until satisfied > Click `Close`\n\nFor those of you that prefer moving pictures, here's a [GIF showing how to do it](https://i.imgur.com/opHrpzY.gifv)"
+      },
+      {
+        "name": "5. Done!",
+        "value": "You should now be good to go and your gamepad inputs should be recorded, even if you don't have the window in focus (but make sure it doesn't get minimized)!"
+      }
+    ]
+  },
+  "setup": {
+    "title": "Setting up GPV",
+    "message": "You can use the following gif to help set up GamePad Viewer",
+    "image": "https://jayraydee.me/Assets/GPV-OBS-Tutorial.gif"
+  }
+}
