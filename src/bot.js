@@ -1,7 +1,14 @@
 import './config'
 import Discord from 'discord.js'
 
-const bot = new Discord.Client()
+const bot = new Discord.Client({
+    presence: {
+        activity: {
+            type: 'PLAYING',
+            name: 'with some gamepads',
+        },
+    },
+})
 
 bot.once('ready', () => {})
 
