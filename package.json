@@ -6,5 +6,14 @@
   "repository": "https://github.com/GamepadViewer/bot.git",
   "author": "Christopher Rodriguez <mrmcpowned@users.noreply.github.com>",
   "license": "GPL v3",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3"
+  }
 }
