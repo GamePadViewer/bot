@@ -2,6 +2,7 @@ import { helpEmbed } from '../utils/helpEmbed'
 import data from '../data/linkInfo.json'
 import { defaultEmbed } from '../utils/defaultEmbed'
 import { removeUserMentions } from '../utils/removeUserMentions'
+import { commandOverview } from '../utils/commandOverview'
 
 const name = 'Link' // User facing name of command
 const description = 'Sends a link to a specific page' // User facing description
@@ -15,7 +16,13 @@ export default {
     cname,
     usage,
     examples,
-    helpMessage: helpEmbed({ name, description, cname, usage, examples }), // Message that bot responds with when either no args are passed, or invoked via info command
+    helpMessage: helpEmbed({
+        name,
+        description,
+        cname,
+        usage,
+        examples,
+    }).addField('Available Links', commandOverview(data)), // Message that bot responds with when either no args are passed, or invoked via info command
     execute: (msg, args) => {
         // The function executed by the command
         args = removeUserMentions(args)

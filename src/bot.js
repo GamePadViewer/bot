@@ -37,7 +37,6 @@ bot.on('message', (msg) => {
     const commandSyntax = new RegExp(/^\.(\w+)(?:\ (\S.+)|)$/i)
     if (msg.author.bot) return
     if (!msg.content.match(commandSyntax)) return
-    console.log(msg.content)
 
     const [, command, argStr] = msg.content.match(commandSyntax)
     const args = argParser(argStr)

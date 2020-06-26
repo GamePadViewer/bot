@@ -4,6 +4,7 @@ import priceData from '../data/priceInfo.json'
 import { removeUserMentions } from '../utils/removeUserMentions'
 import { shuffleArray } from '../utils/shuffleArray'
 import { defaultEmbed } from '../utils/defaultEmbed'
+import { commandOverview } from '../utils/commandOverview'
 
 const name = 'Help' // User facing name of command
 const description = 'Provides help through several help articles' // User facing description
@@ -17,7 +18,13 @@ export default {
     cname,
     usage,
     examples,
-    helpMessage: helpEmbed({ name, description, cname, usage, examples }), // Message that bot responds with when either no args are passed, or invoked via info command
+    helpMessage: helpEmbed({
+        name,
+        description,
+        cname,
+        usage,
+        examples,
+    }).addField('Help Articles', commandOverview(helpData)), // Message that bot responds with when either no args are passed, or invoked via info command
     execute: async (msg, args) => {
         args = removeUserMentions(args)
         const [article] = args
