@@ -38,7 +38,7 @@ export default {
         const reply = {}
 
         if (!info) {
-            bot.reply(message, `Couldn't find help article '${article}'`)
+            msg.channel.send(`Couldn't find help article '${article}'`)
             return
         }
 
