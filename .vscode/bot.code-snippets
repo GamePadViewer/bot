@@ -31,7 +31,7 @@
             "    cname,",
             "    usage,",
             "    examples,",
-            "    helpMessage: '${6:helpEmbed({ name, description, cname, usage, examples })}', // Message that bot responds with when either no args are passed, or invoked via info command",
+            "    helpMessage: ${6:helpEmbed({ name, description, cname, usage, examples \\})}, // Message that bot responds with when either no args are passed, or invoked via info command",
             "    execute: (msg, args) => {",
             "        // The function executed by the command",
             "        $7",
