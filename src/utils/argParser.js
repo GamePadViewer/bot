@@ -14,8 +14,6 @@ export const argParser = (argString) => {
         })
     }
 
-    console.log(matchedDict)
-
     let argsList = argString.split(' ')
     argsList = argsList.map((arg) => {
         if (matchedDict[arg] !== undefined) return matchedDict[arg]
