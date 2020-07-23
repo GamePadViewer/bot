@@ -40,11 +40,7 @@ bot.on('message', (msg) => {
         .map((c) => `\\${c}`)
         .join('')
 
-    console.log(prefix)
-
     const regexStr = `^${escPrefix}(\\w+)(?:\\ (\\S.*)|)$`
-
-    console.log('Regex: ', regexStr)
 
     const commandSyntax = new RegExp(regexStr, 'i')
     if (msg.author.bot) return
