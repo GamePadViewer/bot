@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "dedent": "^0.7.0",
     "discord.js": "^12.2.0",
     "dotenv": "^8.2.0",
     "regenerator-runtime": "^0.13.5"
