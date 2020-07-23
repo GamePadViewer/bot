@@ -1,14 +1,15 @@
 import { helpEmbed } from '../utils/helpEmbed'
+import { cmd } from '../utils/cmd'
 
 const name = 'Welcome Message' // User facing name of command
 const description =
     'Displays a welcome/thank you message, typically after someone has been given help' // User facing description
 const cname = ['w', 'welcome'] // Command name, or array of aliases
-const usage = '.w `t` `@Mention1` `@Mention2` ...' // String showing usage
+const usage = cmd('w `t` `@Mention1` `@Mention2` ...') // String showing usage
 const examples = [
-    '.w',
-    '.w <@702735514884898867>',
-    '.w t <@702735514884898867>',
+    cmd('w'),
+    cmd('w <@702735514884898867>'),
+    cmd('w t <@702735514884898867>'),
 ] // String or Array of examples
 
 export default {

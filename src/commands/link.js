@@ -3,12 +3,13 @@ import data from '../data/linkInfo.json'
 import { defaultEmbed } from '../utils/defaultEmbed'
 import { removeUserMentions } from '../utils/removeUserMentions'
 import { commandOverview } from '../utils/commandOverview'
+import { cmd } from '../utils/cmd'
 
 const name = 'Link' // User facing name of command
 const description = 'Sends a link to a specific page' // User facing description
 const cname = ['l', 'link'] // Command name, or array of aliases
-const usage = '.l `linkName` `@Mention1` `@Mention2`...' // String showing usage
-const examples = ['.l obs', '.l slobs <@702735514884898867>'] // String or Array of examples
+const usage = cmd('l `linkName` `@Mention1` `@Mention2`...') // String showing usage
+const examples = [cmd('l obs'), cmd('l slobs <@702735514884898867>')] // String or Array of examples
 
 export default {
     name,

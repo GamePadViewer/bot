@@ -1,11 +1,12 @@
 import { defaultEmbed } from '../utils/defaultEmbed'
 import { helpEmbed } from '../utils/helpEmbed'
+import { cmd } from '../utils/cmd'
 
 const name = 'Ping' // User facing name of command
 const description = 'Pings the bot and return the time it took to respond' // User facing description
 const cname = 'ping' // Command name, or array of aliases
-const usage = '.ping' // String showing usage
-const examples = '.ping' // String or Array of examples
+const usage = cmd('ping') // String showing usage
+const examples = cmd('ping') // String or Array of examples
 
 export default {
     name,

@@ -1,11 +1,12 @@
 import { defaultEmbed } from '../utils/defaultEmbed'
 import { helpEmbed } from '../utils/helpEmbed'
+import { cmd } from '../utils/cmd'
 
 const name = 'Info' // User facing name of command
 const description = 'Displays information for a given command' // User facing description
 const cname = ['i', 'info'] // Command name, or array of aliases
-const usage = '.i `commandName`' // String showing usage
-const examples = ['.i info', '.i help'] // Array of examples
+const usage = cmd('i `commandName`') // String showing usage
+const examples = [cmd('i info'), cmd('i help')] // Array of examples
 
 export default {
     name,
