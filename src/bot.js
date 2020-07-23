@@ -36,7 +36,17 @@ for (const file of commandFiles) {
 bot.uniqueCommands = [...new Set(bot.commands.array())]
 
 bot.on('message', (msg) => {
-    const commandSyntax = new RegExp(/^\.(\w+)(?:\ (\S.*)|)$/i)
+    const escPrefix = process.env.PREFIX.split('')
+        .map((c) => `\\${c}`)
+        .join('')
+
+    console.log(prefix)
+
+    const regexStr = `^${escPrefix}(\\w+)(?:\\ (\\S.*)|)$`
+
+    console.log('Regex: ', regexStr)
+
+    const commandSyntax = new RegExp(regexStr, 'i')
     if (msg.author.bot) return
     if (!msg.content.match(commandSyntax)) return
 
