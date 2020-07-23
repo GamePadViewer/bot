@@ -79,7 +79,6 @@ bot.on('guildMemberAdd', async (member) => {
 
     if you'd like to help support the development of GamePad Viewer, feel free to become a patron by visiting <https://patreon.com/gpv>`
 
-    console.log(welcomeMsg)
     welcomeChannel.send(welcomeMsg)
 })
 
