@@ -2,6 +2,8 @@ import './config'
 import fs from 'fs'
 import Discord from 'discord.js'
 import { argParser } from './utils/argParser'
+import dedent from 'dedent'
+import { cmd } from './utils/cmd'
 
 const bot = new Discord.Client({
     presence: {
@@ -61,6 +63,24 @@ bot.on('message', (msg) => {
         console.log(e)
         msg.channel.send(`There was a problem trying to run '${command}'`)
     }
+})
+
+bot.on('guildMemberAdd', async (member) => {
+    const welcomeChannel = await bot.channels.fetch(
+        process.env.WELCOME_CHANNEL,
+        true
+    )
+
+    const welcomeMsg = dedent`
+    :wave_tone2:
+    Welcome to the GamePad Viewer Discord ${member.toString()}! If you need help, feel free to ask your question in <#82712913701244928> and someone will try to help you as best as they can. If you're curious about what other things this bot can do, you can run the command \`${cmd(
+        'c'
+    )}\` in the <#171753564476014592> channel.
+
+    if you'd like to help support the development of GamePad Viewer, feel free to become a patron by visiting <https://patreon.com/gpv>`
+
+    console.log(welcomeMsg)
+    welcomeChannel.send(welcomeMsg)
 })
 
 bot.login(process.env.BOT_TOKEN)
