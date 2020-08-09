@@ -5,6 +5,7 @@ import { cmd } from './utils/cmd'
 import { welcomeTemplate } from './data/templates'
 import Format from 'string-format'
 import { processCommand } from './utils/processCommand'
+import { isWeekOldOrMore } from './utils/isWeekOldOrMore'
 
 const bot = new Discord.Client({
     presence: {
@@ -38,8 +39,15 @@ for (const file of commandFiles) {
 
 bot.uniqueCommands = [...new Set(bot.commands.array())]
 
-bot.on('message', (msg) => {
-    processCommand(msg)
+bot.on('message', async (msg) => {
+    if (
+        msg.channel.id === '175941538545664000' &&
+        !isWeekOldOrMore(msg.member)
+    ) {
+        await msg.delete({
+            reason: 'User has not been a member for more than a week',
+        })
+    } else processCommand(msg)
 })
 
 bot.on('guildMemberAdd', async (member) => {
