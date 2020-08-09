@@ -11,12 +11,11 @@
     "fields": [
       {
         "name": "Use a premade custom skin",
-        "value": "You can use a skin someone else has made by placing the url to their .css file into the link generator, or check out the directory pinned in <#305200544111263744> for URLs with skins already linked"
-        
+        "value": "You can use a skin someone else has made by placing the url to their .css file into the link generator, or check out the directory pinned in <#572203187927252993> for URLs with skins already linked"
       },
       {
         "name": "Make your own",
-        "value": "You can also make your own skin if you know HTML/CSS! The link can also be found pinned in <#305200544111263744>"
+        "value": "You can also make your own skin if you know HTML/CSS! The link can also be found pinned in <#572203187927252993>"
       },
       {
         "name": "Ask someone to make you one",

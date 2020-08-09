@@ -4,6 +4,8 @@ import Discord from 'discord.js'
 import { argParser } from './utils/argParser'
 import dedent from 'dedent'
 import { cmd } from './utils/cmd'
+import { welcomeTemplate } from './data/templates'
+import Format from 'string-format'
 
 const bot = new Discord.Client({
     presence: {
@@ -71,13 +73,17 @@ bot.on('guildMemberAdd', async (member) => {
         true
     )
 
-    const welcomeMsg = dedent`
-    :wave_tone2:
-    Welcome to the GamePad Viewer Discord ${member.toString()}! If you need help, feel free to ask your question in <#82712913701244928> and someone will try to help you as best as they can. If you're curious about what other things this bot can do, you can run the command \`${cmd(
-        'c'
-    )}\` in the <#171753564476014592> channel.
+    const msgParams = {
+        userMention: member.toString(),
+        lobbyChannel: '<#554461581266649089>',
+        skinsChannel: '<#572203187927252993>',
+        supportChannel: '<#82712913701244928>',
+        updatesChannel: '<#199470788733173760>',
+        botChannel: '<#171753564476014592>',
+        botCommand: cmd('c'),
+    }
 
-    if you'd like to help support the development of GamePad Viewer, feel free to become a patron by visiting <https://patreon.com/gpv>`
+    const welcomeMsg = Format(welcomeTemplate, msgParams)
 
     welcomeChannel.send(welcomeMsg)
 })
