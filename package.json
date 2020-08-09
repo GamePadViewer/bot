@@ -18,6 +18,7 @@
     "dedent": "^0.7.0",
     "discord.js": "^12.2.0",
     "dotenv": "^8.2.0",
+    "moment": "^2.27.0",
     "regenerator-runtime": "^0.13.5",
     "string-format": "^2.0.0"
   },
