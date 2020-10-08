@@ -2,10 +2,11 @@ import './config'
 import fs from 'fs'
 import Discord from 'discord.js'
 import { cmd } from './utils/cmd'
-import { welcomeTemplate } from './data/templates'
+import { endMessages, welcomeTemplate } from './data/templates'
 import Format from 'string-format'
 import { processCommand } from './utils/processCommand'
 import { isWeekOldOrMore } from './utils/isWeekOldOrMore'
+import dedent from 'dedent'
 
 const bot = new Discord.Client({
     presence: {
@@ -64,6 +65,9 @@ bot.on('guildMemberAdd', async (member) => {
         updatesChannel: '<#199470788733173760>',
         botChannel: '<#171753564476014592>',
         botCommand: cmd('c'),
+        endMessage: dedent(
+            endMessages[(endMessages.length * Math.random()) | 0]
+        ), // Get a random end message
     }
 
     const welcomeMsg = Format(welcomeTemplate, msgParams)
