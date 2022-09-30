@@ -3,6 +3,7 @@ export const welcomeTemplate = `:wave_tone2: Hi {userMention}!
 <:gamepad:230123446972055552> Welcome to the **__GamePad Viewer Discord__** <:gpvg:949928599677444136><:gpvp:949928599400616017><:gpvv:949928599790698577>
 Here's a getting started list you can follow while you're here: 
 > **{introChannel}** - Introduce yourself to the server 🗣
+> **{rolesChannel}** - Tag yourself with roles you're interested in 🏷
 > **{lobbyChannel}** - Chat about anything offtopic 👨‍💻
 > **{skinsChannel}** - Discuss skins you like or get help making a new one 🖌
 > **{supportChannel}** - Get support regarding any GPV related issues you might be having 🛠
@@ -13,7 +14,7 @@ Here's a getting started list you can follow while you're here:
 
 export const endMessages = [
     `⁉ **__Did you know you get perks for boosting this server?__** <:discord:1024569352210624552>
-    If you choose to be a **Server Booster** you'll get early access to beta testing GPV 2.0 as well as other future perks! If you have Discord Nitro already, **you already have 2 free boosts** per month you can use, so make sure to follow this guide to get started boosting today: <https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ-#h_01GCD8SSZ6HN132NAW16G4523G>`,
+    If you choose to be a **Server Booster** you'll get early access to beta testing GPV 2.0, the ability to promote your stream in {promoChannel}, and other future perks! If you have Discord Nitro already, **you already have 2 free boosts** per month you can use, so make sure to follow this guide to get started boosting today: <https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ-#h_01GCD8SSZ6HN132NAW16G4523G>`,
 ]
 
 export const oldEndMessages = [

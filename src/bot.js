@@ -58,6 +58,7 @@ bot.on('guildMemberAdd', async (member) => {
         supportChannel: '<#1023793423205027850>',
         feedbackChannel: '<#1023844890267885568>',
         updatesChannel: '<#199470788733173760>',
+        promoChannel: '<#175941538545664000>',
         botChannel: '<#171753564476014592>',
         botCommand: cmd('c'),
         endMessage: dedent(
