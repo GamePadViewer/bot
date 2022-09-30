@@ -9,11 +9,13 @@ Feel free to stick around and chat with people in {lobbyChannel}, and if you're 
 {endMessage}`
 
 export const endMessages = [
-    `🗣 **__First time here? Let us know what you think about the Discord!__**
-    We're looking for some quick feedback (5 questions) regarding the Discord! If you know someone who's been in the server for a while, feel free to send them the form too <https://forms.gle/qhKAKSdxnMQwcR2e8>`,
+    `⁉ **__Did you know you get perks for boosting this server?__**
+    If you choose to be a **Server Booster** you'll get early access to beta testing GPV 2.0 as well as other future perks! If you have Discord Nitro already, **you already have 2 free boosts** per month you can use, so make sure to follow this guide to get started boosting today: <https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ-#h_01GCD8SSZ6HN132NAW16G4523G>`,
 ]
 
 export const oldEndMessages = [
+    `🗣 **__First time here? Let us know what you think about the Discord!__**
+    We're looking for some quick feedback (5 questions) regarding the Discord! If you know someone who's been in the server for a while, feel free to send them the form too <https://forms.gle/qhKAKSdxnMQwcR2e8>`,
     `<:patreon:741878715109212210> **__Want to support the development of GamePad Viewer?__**
     You can become a patron of GPV today by visiting <https://patreon.com/gpv>!`,
     `📢 **__Have some feedback about GamePad Viewer?__**
