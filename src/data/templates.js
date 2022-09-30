@@ -1,6 +1,7 @@
 export const welcomeTemplate = `:wave_tone2: Hi {userMention}!
 
 <:gamepad:230123446972055552> Welcome to the **__GamePad Viewer Discord__** <:gpvg:949928599677444136><:gpvp:949928599400616017><:gpvv:949928599790698577>
+
 Here's a getting started list you can follow while you're here: 
 > **{introChannel}** - Introduce yourself to the server 🗣
 > **{rolesChannel}** - Tag yourself with roles you're interested in 🏷

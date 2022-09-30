@@ -54,6 +54,7 @@ bot.on('guildMemberAdd', async (member) => {
         userMention: member.toString(),
         lobbyChannel: '<#554461581266649089>',
         introChannel: '<#1024040820686458900>',
+        rolesChannel: '<#997416800734150687>',
         skinsChannel: '<#572203187927252993>',
         supportChannel: '<#1023793423205027850>',
         feedbackChannel: '<#1023844890267885568>',
