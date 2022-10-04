@@ -67,7 +67,7 @@ bot.on('guildMemberAdd', async (member) => {
         ), // Get a random end message
     }
 
-    const welcomeMsg = Format(welcomeTemplate, msgParams)
+    const welcomeMsg = Format(Format(welcomeTemplate, msgParams), msgParams)
 
     welcomeChannel.send(welcomeMsg)
 })
