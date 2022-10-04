@@ -3,13 +3,13 @@ export const welcomeTemplate = `:wave_tone2: Hi {userMention}!
 <:gamepad:230123446972055552> Welcome to the **__GamePad Viewer Discord__** <:gpvg:949928599677444136><:gpvp:949928599400616017><:gpvv:949928599790698577>
 
 Here's a getting started list you can follow while you're here: 
-> **{introChannel}** - Introduce yourself to the server 🗣
-> **{rolesChannel}** - Tag yourself with roles you're interested in 🏷
-> **{lobbyChannel}** - Chat about anything offtopic 👨‍💻
-> **{skinsChannel}** - Discuss skins you like or get help making a new one 🖌
-> **{supportChannel}** - Get support regarding any GPV related issues you might be having 🛠
-> **{feedbackChannel}** - Give some feedback regarding the GPV tool, the GPV Discord, or anything else GPV related ✍
-> **{updatesChannel}** - Follow this channel to get updates about GPV in your own Discord server 📣
+- {introChannel} - **__Introduce__** yourself to the server 🗣
+- {supportChannel} - **__Get support__** regarding any GPV related issues you might be having 🛠
+- {lobbyChannel} - **__Chat__** about anything offtopic 👨‍💻
+- {skinsChannel} - **__Discuss skins__** you like or get help making a new one 🖌
+- {feedbackChannel} - **__Give feedback__** regarding the GPV tool, the GPV Discord, or anything else GPV related ✍
+- {rolesChannel} - **__Tag yourself__** with roles you're interested in 🏷
+- {updatesChannel} - **__Follow__** this channel to get updates about GPV in your own Discord server 📣
 
 {endMessage}`
 
