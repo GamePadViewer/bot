@@ -1,21 +1,22 @@
-export const welcomeTemplate = `:wave_tone2: Hi {userMention}!
+export const welcomeTemplate = `# <:gamepad:230123446972055552> Welcome to the GamePad Viewer Discord <:gpvg:949928599677444136><:gpvp:949928599400616017><:gpvv:949928599790698577>
 
-<:gamepad:230123446972055552> Welcome to the **__GamePad Viewer Discord__** <:gpvg:949928599677444136><:gpvp:949928599400616017><:gpvv:949928599790698577>
+### :wave_tone2: Hi {userMention}!
 
 Here's a getting started list you can follow while you're here: 
-- {introChannel} - **__Introduce__** yourself to the server 🗣
+- {updatesChannel} - **__Follow__** this channel to get updates about GPV in your own Discord server 📣
 - {supportChannel} - **__Get support__** regarding any GPV related issues you might be having 🛠
-- {lobbyChannel} - **__Chat__** about anything offtopic 👨‍💻
 - {skinsChannel} - **__Discuss skins__** you like or get help making a new one 🖌
+- {lobbyChannel} - **__Introduce yourself__** and feel free to **__chat__** about anything offtopic 👨‍💻
 - {feedbackChannel} - **__Give feedback__** regarding the GPV tool, the GPV Discord, or anything else GPV related ✍
 - {rolesChannel} - **__Tag yourself__** with roles you're interested in 🏷
-- {updatesChannel} - **__Follow__** this channel to get updates about GPV in your own Discord server 📣
+
+Don't foget to check the <id:guide> to access other resources too!
 
 {endMessage}`
 
 export const endMessages = [
-    `⁉ **__Did you know you get perks for boosting this server?__** <:discord:1024569352210624552>
-    If you choose to be a **Server Booster** you'll get early access to beta testing GPV 2.0, the ability to promote your stream in {promoChannel}, and other future perks! If you have Discord Nitro already, **you already have 2 free boosts** per month you can use, so make sure to follow this guide to get started boosting today: <https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ-#h_01GCD8SSZ6HN132NAW16G4523G>`,
+    `### ⁉ **__Did you know you get perks for boosting this server?__** <:discord:1024569352210624552>
+    If you choose to be a **Server Booster** you'll get early access to beta testing GPV 2.0, the ability to promote your stream in {promoChannel}, and other future perks! If you have Discord Nitro already, **you already have 2 free boosts** per month you can use, so make sure to [follow this guide](https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ-#h_01GCD8SSZ6HN132NAW16G4523G) to get started boosting today!`,
 ]
 
 export const oldEndMessages = [
