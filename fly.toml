@@ -1,0 +1,7 @@
+app = "gpv-bot"
+
+[build]
+  builder = "heroku/buildpacks:20"
+
+[processes]
+  worker = "node lib/bot.js"
