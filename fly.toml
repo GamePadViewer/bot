@@ -1,7 +1,11 @@
 app = "gpv-bot"
 
+primary_region = "sea"
+kill_signal = "SIGINT"
+kill_timeout = "5s"
+
 [build]
-  builder = "heroku/buildpacks:20"
+builder = "heroku/buildpacks:20"
 
 [processes]
-  worker = "node lib/bot.js"
+worker = "node lib/bot.js"

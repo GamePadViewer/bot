@@ -21,6 +21,8 @@ bot.once('ready', () => {})
 
 bot.commands = new Discord.Collection()
 
+bot.onlineSince = new Date()
+
 const commandFiles = fs
     .readdirSync('./src/commands')
     .filter((file) => file.endsWith('.js'))
