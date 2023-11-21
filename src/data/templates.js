@@ -10,7 +10,7 @@ Here's a getting started list you can follow while you're here:
 - {feedbackChannel} - **__Give feedback__** regarding the GPV tool, the GPV Discord, or anything else GPV related ✍
 - {rolesChannel} - **__Tag yourself__** with roles you're interested in 🏷
 
-Don't foget to check the <id:guide> to access other resources too!
+Don't forget to check the <id:guide> to access other resources too!
 
 {endMessage}`
 
