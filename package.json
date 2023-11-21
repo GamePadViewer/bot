@@ -30,10 +30,15 @@
     "@babel/preset-env": "^7.10.3",
     "@types/babel__core": "^7.1.9",
     "@types/babel__preset-env": "^7.9.0",
+    "@types/core-js": "^2.5.8",
+    "@types/dedent": "^0.7.2",
+    "@types/luxon": "^3.3.5",
     "@types/nodemon": "^1.19.0",
+    "@types/regenerator-runtime": "^0.13.5",
+    "@types/string-format": "^2.0.3",
     "nodemon": "^2.0.4"
   },
   "engines": {
-    "node": "12.x"
+    "node": "18.x"
   }
 }

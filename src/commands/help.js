@@ -45,7 +45,7 @@ export default {
 
         if (article == 'cs') {
             info = JSON.parse(JSON.stringify(info))
-            let creatorRole = await msg.guild.roles.fetch('722632169196879884')
+            let creatorRole = await msg.guild.roles.fetch('1175231233324752906', false)
             let creators = Array.from(creatorRole.members.values())
 
             shuffleArray(creators)
@@ -76,7 +76,9 @@ export default {
         if (info.fields) {
             info.fields.forEach((f) => {
                 const { name = '', value = '', inline = false } = f
-                embed.addField(name, value, inline)
+                if (value) {
+                    embed.addField(name, value, inline)
+                }
             })
         }
 
