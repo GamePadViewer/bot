@@ -15,8 +15,9 @@ Don't forget to check the <id:guide> to access other resources too!
 {endMessage}`
 
 export const endMessages = [
-    `### ⁉ **__Did you know you get perks for boosting this server?__** <:discord:1024569352210624552>
-    If you choose to be a **Server Booster** you'll get early access to beta testing GPV 2.0, the ability to promote your stream in {promoChannel}, and other future perks! If you have Discord Nitro already, **you already have 2 free boosts** per month you can use, so make sure to [follow this guide](https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ-#h_01GCD8SSZ6HN132NAW16G4523G) to get started boosting today!`,
+    `### 👀 __GPV 2 is coming...__
+    <:gpvg:949928599677444136><:gpvp:949928599400616017><:gpvv:949928599790698577> <:gpv2:1185898294669480006> is dropping before GTA VI. Register for the event below and be part of the launch 🚀
+    https://discord.gg/zuyypHC9KF?event=1185861457208950784`,
 ]
 
 export const oldEndMessages = [
@@ -28,4 +29,6 @@ export const oldEndMessages = [
     If you've got feedback, please feel free to fill out the feedback form below. If you choose to be contacted in the future, you might even be able to try out GPV 2.0 before everyone else! <https://forms.gle/BEebQWpbiSktnbHk9>`,
     `🎨 **__Do you make custom skins or know somebody who does?__**
     GPV is looking to get feedback from skin creators! If you're a skin creator, feel free fill out the short (6 questions) feedback form. If you know someone who creates skins, send them the form too! <https://forms.gle/bm4SQgkJEp16LyNR7>`,
+    `### ⁉ **__Did you know you get perks for boosting this server?__** <:discord:1024569352210624552>
+    If you choose to be a **Server Booster** you'll get early access to beta testing GPV 2.0, the ability to promote your stream in {promoChannel}, and other future perks! If you have Discord Nitro already, **you already have 2 free boosts** per month you can use, so make sure to [follow this guide](https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ-#h_01GCD8SSZ6HN132NAW16G4523G) to get started boosting today!`,
 ]
