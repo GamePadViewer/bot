@@ -15,9 +15,8 @@ Don't forget to check the <id:guide> to access other resources too!
 {endMessage}`
 
 export const endMessages = [
-    `### 👀 __GPV 2 is coming...__
-    <:gpvg:949928599677444136><:gpvp:949928599400616017><:gpvv:949928599790698577> <:gpv2:1185898294669480006> is dropping before GTA VI. Register for the event below and be part of the launch 🚀
-    https://discord.gg/zuyypHC9KF?event=1185861457208950784`,
+    `### __GPV 2 is LIVE__ 🚀
+    <:gpvg:949928599677444136><:gpvp:949928599400616017><:gpvv:949928599790698577> <:gpv2:1185898294669480006> dropped before GTA VI. Check it out at https://beta.gamepadviewer.com`,
 ]
 
 export const oldEndMessages = [

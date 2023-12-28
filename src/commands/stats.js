@@ -25,6 +25,7 @@ export default {
         ).toUnixInteger()
 
         statsEmbed.addField('Uptime', `<t:${start}:R>`)
+        statsEmbed.addField('Version', process.env.npm_package_version)
 
         msg.channel.send(statsEmbed)
     },
